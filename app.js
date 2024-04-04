@@ -15,4 +15,9 @@ const app = express()
 app.use('/api/resources', resourcesRouter)
 app.use('/api', express.static('public/api.html'))
 
+// Temporarily default redirect, TODO: Change to homepage
+app.get('*', (req, res) => {
+  res.redirect('/api')
+})
+
 module.exports = app
