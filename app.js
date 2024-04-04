@@ -13,5 +13,6 @@ mongoose
 const app = express()
 
 app.use('/api/resources', resourcesRouter)
+app.use('/api', express.static('public/api.html'))
 
 module.exports = app

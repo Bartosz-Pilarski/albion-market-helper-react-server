@@ -16,4 +16,10 @@ resourcesRouter.get('/:type', async (req, res) => {
   res.status(404).json({ error: 'resources not found' })
 })
 
+resourcesRouter.get('/', async (req, res) => {
+  const requestedResources = await Resource.find({})
+
+  res.status(200).json(requestedResources)
+})
+
 module.exports = resourcesRouter

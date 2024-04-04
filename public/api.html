@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Albion Market Helper API</title>
+</head>
+<body>
+  <div>
+    <h1>Albion Market Helper API</h1>
+    <h2>Endpoints: </h2>
+    <ul>
+      <li><b>/resources</b> - Get all resource prices, </li>
+      <li>
+        <b>/resources/:type</b> - Get all resource prices by resource type. <br/>
+        Recognized types are:
+        <ul>
+          <li> ORE </li>
+          <li> BAR </li>
+        </ul>
+      </li>
+      <li>
+        <b>/resources/:type/:tier</b> - Get prices for a resource of specific tier and type. <br/> 
+        Tiers range from 1-8.
+      </li>
+    </ul>
+    <footer>
+      Only GET requests are handled.
+    </footer>
+  </div>
+
+
+  <style>
+    body {
+      margin: 0;
+      
+      background-color: #291f1f;
+      color: #FFFFFF;
+
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: large;
+    }
+    h1, h2 {
+      color: #a72725;
+    }
+    body div {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      width: 32rem;
+      margin: 0 auto;
+      border: 2px solid #a72725;
+      border-top: none;
+      border-bottom: none;
+    }
+    ul {
+      text-align: left;
+    }
+  </style>
+</body>
+</html>
