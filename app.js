@@ -1,4 +1,5 @@
 const express = require('express')
+const path = require('path')
 
 const resourcesRouter = require('./controllers/resources.js')
 
@@ -12,12 +13,27 @@ mongoose
 
 const app = express()
 
+app.use((req, res, next) => {
+  console.log(req.path)
+  next()
+})
+
+// Explicit handling for trailing slash
+const apiPagePath = path.join(__dirname, 'public', 'api.html')
+app.get('/api/', (req, res) => {
+  res.sendFile(apiPagePath)
+})
+app.get('/api', (req, res) => {
+  res.sendFile(apiPagePath)
+})
+
 app.use('/api/resources', resourcesRouter)
-app.use('/api', express.static('public/api.html'))
+
+app.use(express.static('public'))
 
 // Temporarily default redirect, TODO: Change to homepage
 app.get('*', (req, res) => {
-  res.redirect('/api')
+  res.redirect('http://localhost:5173')
 })
 
 module.exports = app
