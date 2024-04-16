@@ -29,7 +29,7 @@ readline.question('Are you sure you want to re-initialize the prices database? (
     await Resource.deleteMany({})
 
     console.log('Fetching prices...')
-    const prices = await externalDataService.fetchPricesByType('ORE')
+    const prices = await externalDataService.fetchAll()
     console.log(prices)
 
     console.log('Saving prices to database...')
