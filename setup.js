@@ -8,6 +8,8 @@
 */
 
 const Resource = require('./models/resource.js')
+const ResourceTier = require('./models/resourceTier.js')
+const resourceTiersService = require('./utils/resourceTiers.js')
 const externalDataService = require('./services/externalDataService.js')
 
 const mongoose = require('mongoose')
@@ -27,15 +29,20 @@ readline.question('Are you sure you want to re-initialize the prices database? (
 
     console.log('Wiping database...')
     await Resource.deleteMany({})
+    await ResourceTier.deleteMany()
 
     console.log('Fetching prices...')
     const prices = await externalDataService.fetchAll()
     console.log(prices)
 
     console.log('Saving prices to database...')
-    const operations = Object.keys(prices).map((item) => externalDataService.saveItemPrices(prices[item]))
+    let operations = Object.keys(prices).map((item) => externalDataService.saveItemPrices(prices[item]))
     await Promise.all(operations)
-    
+
+    console.log('Creating ResourceTiers...')
+    operations = Object.keys(resourceTiersService.resourceTypes).map((type) => resourceTiersService.createResouceTiers(type))
+    await Promise.all(operations)
+
     console.log('Done.')
     mongoose.disconnect()
     return readline.close()

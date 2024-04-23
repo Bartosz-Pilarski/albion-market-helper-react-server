@@ -1,47 +1,39 @@
 const resourcesRouter = require('express').Router()
 
+//Crashes on fetching data if not imported
 const Resource = require('../models/resource.js')
+const ResourceTier = require('../models/resourceTier.js')
 
 const types = {
-  METAL: ["ORE", "METALBAR"]
+  METAL: {RAW: "ORE", REFINED: "METALBAR"}
 }
 
 resourcesRouter.get('/', async (req, res) => {
-  const requestedResources = await Resource.find({})
+  const requestedResources = await ResourceTier.find({}).populate('raw').populate('refined')
 
-  res.status(200).json(requestedResources)
+  if(requestedResources) return res.status(200).json(requestedResources)
+  res.status(404).json({ error: 'resources not found'})
 })
 
 resourcesRouter.get('/:type', async (req, res) => {
   const requestedType = req.params.type.toUpperCase()
   if(!Object.hasOwn(types, requestedType)) return res.status(400).json({ error: 'incorrect parameters' })
 
-  const requestedResourcesRaw = await Resource.find({ type: types[requestedType][0] })
-  const requestedResourcesRefined = await Resource.find({ type: types[requestedType][1] })
+  const requestedResources = await ResourceTier.find({ type: requestedType }).populate('raw').populate('refined')
 
-  const requestedResources = {
-    raw: requestedResourcesRaw,
-    refined: requestedResourcesRefined
-  }
-
-  if(requestedResources.raw[0] && requestedResources.refined[0]) return res.status(200).json(requestedResources)
+  if(requestedResources) return res.status(200).json(requestedResources)
   res.status(404).json({ error: 'resources not found' })
 })
 
 resourcesRouter.get('/:type/:tier', async (req, res) => {
   const requestedType = req.params.type.toUpperCase()
   const requestedTier = parseInt(req.params.tier)
-  if(!Object.hasOwn(types, requestedType) || !(1 < requestedTier*1 < 9)) return res.status(400).json({ error: 'incorrect parameters' })
 
-  const requestedResourceRaw = await Resource.findOne({ tier: requestedTier, type: types[requestedType][0] })
-  const requestedResourceRefined = await Resource.findOne({ tier: requestedTier, type: types[requestedType][1] })
+  if(!Object.hasOwn(types, requestedType) || (1 > requestedTier) || (requestedTier > 8)) return res.status(400).json({ error: 'incorrect parameters' })
 
-  const requestedResource = {
-    raw: requestedResourceRaw,
-    refined: requestedResourceRefined
-  }
+  const requestedResources = await ResourceTier.findOne({ tier: requestedTier, type: requestedType }).populate('raw').populate('refined')
 
-  if(requestedResource) return res.status(200).json(requestedResource)
+  if(requestedResources) return res.status(200).json(requestedResources)
   res.status(404).json({ error: 'resource not found' })
 })
 
