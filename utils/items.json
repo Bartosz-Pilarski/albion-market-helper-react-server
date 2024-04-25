@@ -1,0 +1,282 @@
+{
+    "T2_ORE": {
+        "title": "Tier II Ore",
+        "subtitle": "Copper Ore"
+    },
+    "T3_ORE": {
+        "title": "Tier III Ore",
+        "subtitle": "Tin Ore"
+    },
+    "T4_ORE": {
+        "title": "Tier IV Ore",
+        "subtitle": "Iron Ore"
+    },
+    "T5_ORE": {
+        "title": "Tier V Ore",
+        "subtitle": "Titanium Ore"
+    },
+    "T6_ORE": {
+        "title": "Tier VI Ore",
+        "subtitle": "Runite Ore"
+    },
+    "T7_ORE": {
+        "title": "Tier VII Ore",
+        "subtitle": "Meterorite Ore"
+    },
+    "T8_ORE": {
+        "title": "Tier VIII Ore",
+        "subtitle": "Adamantium Ore"
+    },
+    "T2_METALBAR": {
+        "title": "Tier II Bar",
+        "subtitle": "Copper Bar"
+    },
+    "T3_METALBAR": {
+        "title": "Tier III Bar",
+        "subtitle": "Bronze Bar"
+    },
+    "T4_METALBAR": {
+        "title": "Tier IV Bar",
+        "subtitle": "Steel Bar"
+    },
+    "T5_METALBAR": {
+        "title": "Tier V Bar",
+        "subtitle": "Titanium Steel Bar"
+    },
+    "T6_METALBAR": {
+        "title": "Tier VI Bar",
+        "subtitle": "Runite Steel Bar"
+    },
+    "T7_METALBAR": {
+        "title": "Tier VII Bar",
+        "subtitle": "Meterorite Steel Bar"
+    },
+    "T8_METALBAR": {
+        "title": "Tier VIII Bar",
+        "subtitle": "Adamantium Steel Bar"
+    },
+    "T2_FIBER": {
+        "title": "Tier II Fiber",
+        "subtitle": "Cotton"
+    },
+    "T3_FIBER": {
+        "title": "Tier III Fiber",
+        "subtitle": "Flax"
+    },
+    "T4_FIBER": {
+        "title": "Tier IV Fiber",
+        "subtitle": "Hemp"
+    },
+    "T5_FIBER": {
+        "title": "Tier V Fiber",
+        "subtitle": "Skyflower"
+    },
+    "T6_FIBER": {
+        "title": "Tier VI Fiber",
+        "subtitle": "Amberleaf Cotton"
+    },
+    "T7_FIBER": {
+        "title": "Tier VII Fiber",
+        "subtitle": "Sunflax"
+    },
+    "T8_FIBER": {
+        "title": "Tier VIII Fiber",
+        "subtitle": "Ghost Hemp"
+    },
+    "T2_CLOTH": {
+        "title": "Tier II Cloth",
+        "subtitle": "Simple Cloth"
+    },
+    "T3_CLOTH": {
+        "title": "Tier III Cloth",
+        "subtitle": "Neat Cloth"
+    },
+    "T4_CLOTH": {
+        "title": "Tier IV Cloth",
+        "subtitle": "Fine Cloth"
+    },
+    "T5_CLOTH": {
+        "title": "Tier V Cloth",
+        "subtitle": "Ornate Cloth"
+    },
+    "T6_CLOTH": {
+        "title": "Tier VI Cloth",
+        "subtitle": "Lavish Cloth"
+    },
+    "T7_CLOTH": {
+        "title": "Tier VII Cloth",
+        "subtitle": "Opulent Cloth"
+    },
+    "T8_CLOTH": {
+        "title": "Tier VIII Cloth",
+        "subtitle": "Baroque Cloth"
+    },
+    "T2_WOOD": {
+        "title": "Tier II Wood",
+        "subtitle": "Birch Wood"
+    },
+    "T3_WOOD": {
+        "title": "Tier III Wood",
+        "subtitle": "Chestnut Wood"
+    },
+    "T4_WOOD": {
+        "title": "Tier IV Wood",
+        "subtitle": "Pine Wood"
+    },
+    "T5_WOOD": {
+        "title": "Tier V Wood",
+        "subtitle": "Cedar Wood"
+    },
+    "T6_WOOD": {
+        "title": "Tier VI Wood",
+        "subtitle": "Bloodoak Wood"
+    },
+    "T7_WOOD": {
+        "title": "Tier VII Wood",
+        "subtitle": "Ashenbark Wood"
+    },
+    "T8_WOOD": {
+        "title": "Tier VIII Wood",
+        "subtitle": "Whitewood Wood"
+    },
+    "T2_PLANKS": {
+        "title": "Tier II Planks",
+        "subtitle": "Birch Planks"
+    },
+    "T3_PLANKS": {
+        "title": "Tier III Planks",
+        "subtitle": "Chestnut Planks"
+    },
+    "T4_PLANKS": {
+        "title": "Tier IV Planks",
+        "subtitle": "Pine Planks"
+    },
+    "T5_PLANKS": {
+        "title": "Tier V Planks",
+        "subtitle": "Cedar Planks"
+    },
+    "T6_PLANKS": {
+        "title": "Tier VI Planks",
+        "subtitle": "Bloodoak Planks"
+    },
+    "T7_PLANKS": {
+        "title": "Tier VII Planks",
+        "subtitle": "Ashenbark Planks"
+    },
+    "T8_PLANKS": {
+        "title": "Tier VIII Planks",
+        "subtitle": "Whitewood Planks"
+    },
+    "T2_HIDE": {
+        "title": "Tier II Hide",
+        "subtitle": "Rugged Hide"
+    },
+    "T3_HIDE": {
+        "title": "Tier III Hide",
+        "subtitle": "Thin Hide"
+    },
+    "T4_HIDE": {
+        "title": "Tier IV Hide",
+        "subtitle": "Medium Hide"
+    },
+    "T5_HIDE": {
+        "title": "Tier V Hide",
+        "subtitle": "Heavy Hide"
+    },
+    "T6_HIDE": {
+        "title": "Tier VI Hide",
+        "subtitle": "Robust Hide"
+    },
+    "T7_HIDE": {
+        "title": "Tier VII Hide",
+        "subtitle": "Thick Hide"
+    },
+    "T8_HIDE": {
+        "title": "Tier VIII Hide",
+        "subtitle": "Resilient Hide"
+    },
+    "T2_LEATHER": {
+        "title": "Tier II Leather",
+        "subtitle": "Stiff Leather"
+    },
+    "T3_LEATHER": {
+        "title": "Tier III Leather",
+        "subtitle": "Thick Leather"
+    },
+    "T4_LEATHER": {
+        "title": "Tier IV Leather",
+        "subtitle": "Worked Leather"
+    },
+    "T5_LEATHER": {
+        "title": "Tier V Leather",
+        "subtitle": "Cured Leather"
+    },
+    "T6_LEATHER": {
+        "title": "Tier VI Leather",
+        "subtitle": "Hardened Leather"
+    },
+    "T7_LEATHER": {
+        "title": "Tier VII Leather",
+        "subtitle": "Reinforced Leather"
+    },
+    "T8_LEATHER": {
+        "title": "Tier VIII Leather",
+        "subtitle": "Fortified Leather"
+    },
+    "T2_ROCK": {
+        "title": "Tier II ",
+        "subtitle": "Limestone"
+    },
+    "T3_ROCK": {
+        "title": "Tier III ",
+        "subtitle": "Sandstone"
+    },
+    "T4_ROCK": {
+        "title": "Tier IV ",
+        "subtitle": "Travertine"
+    },
+    "T5_ROCK": {
+        "title": "Tier V ",
+        "subtitle": "Granite"
+    },
+    "T6_ROCK": {
+        "title": "Tier VI ",
+        "subtitle": "Slate"
+    },
+    "T7_ROCK": {
+        "title": "Tier VII ",
+        "subtitle": "Basalt"
+    },
+    "T8_ROCK": {
+        "title": "Tier VIII ",
+        "subtitle": "Marble"
+    },
+    "T2_STONEBLOCK": {
+        "title": "Tier II Block",
+        "subtitle": "Limestone Block"
+    },
+    "T3_STONEBLOCK": {
+        "title": "Tier III Block",
+        "subtitle": "Sandstone Block"
+    },
+    "T4_STONEBLOCK": {
+        "title": "Tier IV Block",
+        "subtitle": "Travertine Block"
+    },
+    "T5_STONEBLOCK": {
+        "title": "Tier V Block",
+        "subtitle": "Granite Block"
+    },
+    "T6_STONEBLOCK": {
+        "title": "Tier VI Block",
+        "subtitle": "Slate Block"
+    },
+    "T7_STONEBLOCK": {
+        "title": "Tier VII Block",
+        "subtitle": "Basalt Block"
+    },
+    "T8_STONEBLOCK": {
+        "title": "Tier VIII Block",
+        "subtitle": "Marble Block"
+    }
+}
