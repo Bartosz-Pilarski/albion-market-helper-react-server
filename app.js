@@ -2,6 +2,7 @@ const express = require('express')
 const path = require('path')
 
 const resourcesRouter = require('./controllers/resources.js')
+const refiningRouter = require('./controllers/refining.js')
 
 const mongoose = require('mongoose')
 const { MONGO_URL } = require('./utils/config.js')
@@ -28,6 +29,7 @@ app.get('/api', (req, res) => {
 })
 
 app.use('/api/resources', resourcesRouter)
+app.use('/api/refining', refiningRouter)
 
 app.use(express.static('public'))
 
