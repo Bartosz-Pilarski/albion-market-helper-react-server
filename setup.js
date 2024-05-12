@@ -29,11 +29,10 @@ readline.question('Are you sure you want to re-initialize the prices database? (
 
     console.log('Wiping database...')
     await Resource.deleteMany({})
-    await ResourceTier.deleteMany()
+    await ResourceTier.deleteMany({})
 
     console.log('Fetching prices...')
     const prices = await externalDataService.fetchAll()
-    console.log(prices)
 
     console.log('Saving prices to database...')
     let operations = Object.keys(prices).map((item) => externalDataService.saveItemPrices(prices[item]))

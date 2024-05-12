@@ -1,172 +1,177 @@
 {
     "T2_METAL": {
-        "NUTRITION": 1.8,
-        "INGREDIENT_1": ["T2_ORE", 1]
+        "NUTRITION": 0,
+        "RESOURCE": ["T2_ORE", 1],
+        "CATALYST": []
     },
     "T3_METAL": {
         "NUTRITION": 0.9,
-        "INGREDIENT_1": ["T3_ORE", 2],
-        "INGREDIENT_2": ["T2_METALBAR", 1]
+        "RESOURCE": ["T3_ORE", 2],
+        "CATALYST": ["T2_METALBAR", 1]
     },
     "T4_METAL": {
         "NUTRITION": 1.8,
-        "INGREDIENT_1": ["T4_ORE", 2],
-        "INGREDIENT_2": ["T3_METALBAR", 1]
+        "RESOURCE": ["T4_ORE", 2],
+        "CATALYST": ["T3_METALBAR", 1]
     },
     "T5_METAL": {
         "NUTRITION": 3.6,
-        "INGREDIENT_1": ["T5_ORE", 3],
-        "INGREDIENT_2": ["T4_METALBAR", 1]
+        "RESOURCE": ["T5_ORE", 3],
+        "CATALYST": ["T4_METALBAR", 1]
     },
     "T6_METAL": {
         "NUTRITION": 7.2,
-        "INGREDIENT_1": ["T6_ORE", 4],
-        "INGREDIENT_2": ["T5_METALBAR", 1]
+        "RESOURCE": ["T6_ORE", 4],
+        "CATALYST": ["T5_METALBAR", 1]
     },
     "T7_METAL": {
         "NUTRITION": 14.4,
-        "INGREDIENT_1": ["T7_ORE", 5],
-        "INGREDIENT_2": ["T6_METALBAR", 1]
+        "RESOURCE": ["T7_ORE", 5],
+        "CATALYST": ["T6_METALBAR", 1]
     },
     "T8_METAL": {
         "NUTRITION": 28.8,
-        "INGREDIENT_1": ["T8_ORE", 5],
-        "INGREDIENT_2": ["T7_METALBAR", 1]
+        "RESOURCE": ["T8_ORE", 5],
+        "CATALYST": ["T7_METALBAR", 1]
     },
     "T2_FIBER": {
-        "NUTRITION": 1.8,
-        "INGREDIENT_1": ["T2_FIBER", 1]
+        "NUTRITION": 0,
+        "RESOURCE": ["T2_FIBER", 1],
+        "CATALYST": []
     },
     "T3_FIBER": {
         "NUTRITION": 0.9,
-        "INGREDIENT_1": ["T3_FIBER", 2],
-        "INGREDIENT_2": ["T2_CLOTH", 1]
+        "RESOURCE": ["T3_FIBER", 2],
+        "CATALYST": ["T2_CLOTH", 1]
     },
     "T4_FIBER": {
         "NUTRITION": 1.8,
-        "INGREDIENT_1": ["T4_FIBER", 2],
-        "INGREDIENT_2": ["T3_CLOTH", 1]
+        "RESOURCE": ["T4_FIBER", 2],
+        "CATALYST": ["T3_CLOTH", 1]
     },
     "T5_FIBER": {
         "NUTRITION": 3.6,
-        "INGREDIENT_1": ["T5_FIBER", 3],
-        "INGREDIENT_2": ["T4_CLOTH", 1]
+        "RESOURCE": ["T5_FIBER", 3],
+        "CATALYST": ["T4_CLOTH", 1]
     },
     "T6_FIBER": {
         "NUTRITION": 7.2,
-        "INGREDIENT_1": ["T6_FIBER", 4],
-        "INGREDIENT_2": ["T5_CLOTH", 1]
+        "RESOURCE": ["T6_FIBER", 4],
+        "CATALYST": ["T5_CLOTH", 1]
     },
     "T7_FIBER": {
         "NUTRITION": 14.4,
-        "INGREDIENT_1": ["T7_FIBER", 5],
-        "INGREDIENT_2": ["T6_CLOTH", 1]
+        "RESOURCE": ["T7_FIBER", 5],
+        "CATALYST": ["T6_CLOTH", 1]
     },
     "T8_FIBER": {
         "NUTRITION": 28.8,
-        "INGREDIENT_1": ["T8_FIBER", 5],
-        "INGREDIENT_2": ["T7_CLOTH", 1]
+        "RESOURCE": ["T8_FIBER", 5],
+        "CATALYST": ["T7_CLOTH", 1]
     },
     "T2_WOOD": {
-        "NUTRITION": 1.8,
-        "INGREDIENT_1": ["T2_WOOD", 1]
+        "NUTRITION": 0,
+        "RESOURCE": ["T2_WOOD", 1],
+        "CATALYST": []
     },
     "T3_WOOD": {
         "NUTRITION": 0.9,
-        "INGREDIENT_1": ["T3_WOOD", 2],
-        "INGREDIENT_2": ["T2_PLANKS", 1]
+        "RESOURCE": ["T3_WOOD", 2],
+        "CATALYST": ["T2_PLANKS", 1]
     },
     "T4_WOOD": {
         "NUTRITION": 1.8,
-        "INGREDIENT_1": ["T4_WOOD", 2],
-        "INGREDIENT_2": ["T3_PLANKS", 1]
+        "RESOURCE": ["T4_WOOD", 2],
+        "CATALYST": ["T3_PLANKS", 1]
     },
     "T5_WOOD": {
         "NUTRITION": 3.6,
-        "INGREDIENT_1": ["T5_WOOD", 3],
-        "INGREDIENT_2": ["T4_PLANKS", 1]
+        "RESOURCE": ["T5_WOOD", 3],
+        "CATALYST": ["T4_PLANKS", 1]
     },
     "T6_WOOD": {
         "NUTRITION": 7.2,
-        "INGREDIENT_1": ["T6_WOOD", 4],
-        "INGREDIENT_2": ["T5_PLANKS", 1]
+        "RESOURCE": ["T6_WOOD", 4],
+        "CATALYST": ["T5_PLANKS", 1]
     },
     "T7_WOOD": {
         "NUTRITION": 14.4,
-        "INGREDIENT_1": ["T7_WOOD", 5],
-        "INGREDIENT_2": ["T6_PLANKS", 1]
+        "RESOURCE": ["T7_WOOD", 5],
+        "CATALYST": ["T6_PLANKS", 1]
     },
     "T8_WOOD": {
         "NUTRITION": 28.8,
-        "INGREDIENT_1": ["T8_WOOD", 5],
-        "INGREDIENT_2": ["T7_PLANKS", 1]
+        "RESOURCE": ["T8_WOOD", 5],
+        "CATALYST": ["T7_PLANKS", 1]
     },
-    "T2_LEATHER": {
-        "NUTRITION": 1.8,
-        "INGREDIENT_1": ["T2_HIDE", 1]
+    "T2_HIDE": {
+        "NUTRITION": 0,
+        "RESOURCE": ["T2_HIDE", 1],
+        "CATALYST": []
     },
-    "T3_LEATHER": {
+    "T3_HIDE": {
         "NUTRITION": 0.9,
-        "INGREDIENT_1": ["T3_HIDE", 2],
-        "INGREDIENT_2": ["T2_LEATHER", 1]
+        "RESOURCE": ["T3_HIDE", 2],
+        "CATALYST": ["T2_LEATHER", 1]
     },
-    "T4_LEATHER": {
+    "T4_HIDE": {
         "NUTRITION": 1.8,
-        "INGREDIENT_1": ["T4_HIDE", 2],
-        "INGREDIENT_2": ["T3_LEATHER", 1]
+        "RESOURCE": ["T4_HIDE", 2],
+        "CATALYST": ["T3_LEATHER", 1]
     },
-    "T5_LEATHER": {
+    "T5_HIDE": {
         "NUTRITION": 3.6,
-        "INGREDIENT_1": ["T5_HIDE", 3],
-        "INGREDIENT_2": ["T4_LEATHER", 1]
+        "RESOURCE": ["T5_HIDE", 3],
+        "CATALYST": ["T4_LEATHER", 1]
     },
-    "T6_LEATHER": {
+    "T6_HIDE": {
         "NUTRITION": 7.2,
-        "INGREDIENT_1": ["T6_HIDE", 4],
-        "INGREDIENT_2": ["T5_LEATHER", 1]
+        "RESOURCE": ["T6_HIDE", 4],
+        "CATALYST": ["T5_LEATHER", 1]
     },
-    "T7_LEATHER": {
+    "T7_HIDE": {
         "NUTRITION": 14.4,
-        "INGREDIENT_1": ["T7_HIDE", 5],
-        "INGREDIENT_2": ["T6_LEATHER", 1]
+        "RESOURCE": ["T7_HIDE", 5],
+        "CATALYST": ["T6_LEATHER", 1]
     },
-    "T8_LEATHER": {
+    "T8_HIDE": {
         "NUTRITION": 28.8,
-        "INGREDIENT_1": ["T8_HIDE", 5],
-        "INGREDIENT_2": ["T7_LEATHER", 1]
+        "RESOURCE": ["T8_HIDE", 5],
+        "CATALYST": ["T7_LEATHER", 1]
     },
     "T2_STONE": {
-        "NUTRITION": 1.8,
-        "INGREDIENT_1": ["T2_ROCK", 1]
+        "NUTRITION": 0,
+        "RESOURCE": ["T2_ROCK", 1],
+        "CATALYST": []
     },
     "T3_STONE": {
         "NUTRITION": 0.9,
-        "INGREDIENT_1": ["T3_ROCK", 2],
-        "INGREDIENT_2": ["T2_STONEBLOCK", 1]
+        "RESOURCE": ["T3_ROCK", 2],
+        "CATALYST": ["T2_STONEBLOCK", 1]
     },
     "T4_STONE": {
         "NUTRITION": 1.8,
-        "INGREDIENT_1": ["T4_ROCK", 2],
-        "INGREDIENT_2": ["T3_STONEBLOCK", 1]
+        "RESOURCE": ["T4_ROCK", 2],
+        "CATALYST": ["T3_STONEBLOCK", 1]
     },
     "T5_STONE": {
         "NUTRITION": 3.6,
-        "INGREDIENT_1": ["T5_ROCK", 3],
-        "INGREDIENT_2": ["T4_STONEBLOCK", 1]
+        "RESOURCE": ["T5_ROCK", 3],
+        "CATALYST": ["T4_STONEBLOCK", 1]
     },
     "T6_STONE": {
         "NUTRITION": 7.2,
-        "INGREDIENT_1": ["T6_ROCK", 4],
-        "INGREDIENT_2": ["T5_STONEBLOCK", 1]
+        "RESOURCE": ["T6_ROCK", 4],
+        "CATALYST": ["T5_STONEBLOCK", 1]
     },
     "T7_STONE": {
         "NUTRITION": 14.4,
-        "INGREDIENT_1": ["T7_ROCK", 5],
-        "INGREDIENT_2": ["T6_STONEBLOCK", 1]
+        "RESOURCE": ["T7_ROCK", 5],
+        "CATALYST": ["T6_STONEBLOCK", 1]
     },
     "T8_STONE": {
         "NUTRITION": 28.8,
-        "INGREDIENT_1": ["T8_ROCK", 5],
-        "INGREDIENT_2": ["T7_STONEBLOCK", 1]
+        "RESOURCE": ["T8_ROCK", 5],
+        "CATALYST": ["T7_STONEBLOCK", 1]
     }
 }

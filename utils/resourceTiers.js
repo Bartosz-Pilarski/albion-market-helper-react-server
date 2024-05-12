@@ -5,15 +5,32 @@ const resourceTypes = {
   METAL: {
     RAW: 'ORE',
     REFINED: 'METALBAR'
+  },
+  WOOD: {
+    RAW: 'WOOD',
+    REFINED: 'PLANKS'
+  },
+  FIBER: {
+    RAW: 'FIBER',
+    REFINED: 'CLOTH'
+  },
+  STONE: {
+    RAW: 'ROCK',
+    REFINED: 'STONEBLOCK'
+  },
+  HIDE: {
+    RAW: 'HIDE',
+    REFINED: 'LEATHER'
   }
 }
 
 const createResouceTiers = async (type) => {
+  console.log('Creating: ', type)
   const savedResources = await Resource.find().or([{ type: resourceTypes[type].RAW }, { type: resourceTypes[type].REFINED }])
-  console.log(savedResources)
-  for(tier = 2; tier < 9; tier++) {
-    console.log(savedResources.find((resource) => resource.tier === tier && resource.type.toUpperCase() === resourceTypes[type].REFINED))
-    console.log(savedResources.find((resource) => resource.tier === tier && resource.type.toUpperCase() === resourceTypes[type].RAW))
+  //console.log(savedResources)
+
+  const tiers = [2,3,4,5,6,7,8]
+  const operations = tiers.map(async (tier) => {
     const resourceTier = new ResourceTier({
       type: type,
       tier: tier,
@@ -22,7 +39,9 @@ const createResouceTiers = async (type) => {
     })
 
     await resourceTier.save()
-  }
+  })
+
+  await Promise.all(operations)
 }
 
 module.exports = {
