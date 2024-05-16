@@ -36,10 +36,18 @@ const resourceSchema = new mongoose.Schema({
         required: true
       }
     }
-  ]
+  ],
+  createdAt: {
+    type: Number
+  },
+  updatedAt: {
+    type: Number
+  }
 },
 {
-  timestamps: true
+  timestamps: {
+    currentTime: () => Date.now()
+  }
 })
 
 resourceSchema.set('toJSON', {
