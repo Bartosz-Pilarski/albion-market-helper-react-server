@@ -3,7 +3,7 @@ const { fetchAll } = require('./services/externalDataService.js')
 const { updateCheck, updatePrices } = require('./services/internalDataService.js')
 const { PORT, UPDATE_INTERVAL } = require('./utils/config.js')
 
-const updatePrices = async () => {
+const updateDBPrices = async () => {
   console.log('Resource data out of date, updating...')
   const freshPrices = await fetchAll()
   await updatePrices(Object.values(freshPrices))
@@ -15,9 +15,9 @@ app.listen(PORT, async () => {
   const updateNeededTest = await updateCheck()
   const updateNeeded = (Date.now() - updateNeededTest.updatedAt) > UPDATE_INTERVAL
   if(updateNeeded) { 
-    updatePrices()
+    updateDBPrices()
   }
   setInterval(() => {
-    updatePrices()
+    updateDBPrices()
   }, UPDATE_INTERVAL)
 })
