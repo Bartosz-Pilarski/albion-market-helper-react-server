@@ -6,6 +6,7 @@ const refiningRouter = require('./controllers/refining.js')
 
 const mongoose = require('mongoose')
 const { MONGO_URL } = require('./utils/config.js')
+const lastUpdateRouter = require('./controllers/lastUpdate.js')
 
 mongoose.set('strictQuery', false)
 mongoose
@@ -14,10 +15,10 @@ mongoose
 
 const app = express()
 
-app.use((req, res, next) => {
-  console.log(req.path)
-  next()
-})
+// app.use((req, res, next) => {
+//   console.log(req.path)
+//   next()
+// })
 
 // Explicit handling for trailing slash
 const apiPagePath = path.join(__dirname, 'public', 'api.html')
@@ -30,6 +31,7 @@ app.get('/api', (req, res) => {
 
 app.use('/api/resources', resourcesRouter)
 app.use('/api/refining', refiningRouter)
+app.use('/api/lastupdate', lastUpdateRouter)
 
 app.use(express.static('public'))
 
