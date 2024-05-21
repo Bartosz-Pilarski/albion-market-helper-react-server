@@ -29,15 +29,17 @@ app.get('/api', (req, res) => {
   res.sendFile(apiPagePath)
 })
 
+app.use(express.static('dist'))
+
 app.use('/api/resources', resourcesRouter)
 app.use('/api/refining', refiningRouter)
 app.use('/api/lastupdate', lastUpdateRouter)
 
 app.use(express.static('public'))
 
-// Temporarily default redirect, TODO: Change to homepage
+// Temporarily default redirect
 app.get('*', (req, res) => {
-  res.redirect('http://localhost:5173')
+  res.redirect('/')
 })
 
 module.exports = app
