@@ -224,31 +224,31 @@
         "subtitle": "Fortified Leather"
     },
     "T2_ROCK": {
-        "title": "Tier II ",
+        "title": "Tier II Rock",
         "subtitle": "Limestone"
     },
     "T3_ROCK": {
-        "title": "Tier III ",
+        "title": "Tier III Rock",
         "subtitle": "Sandstone"
     },
     "T4_ROCK": {
-        "title": "Tier IV ",
+        "title": "Tier IV Rock",
         "subtitle": "Travertine"
     },
     "T5_ROCK": {
-        "title": "Tier V ",
+        "title": "Tier V Rock",
         "subtitle": "Granite"
     },
     "T6_ROCK": {
-        "title": "Tier VI ",
+        "title": "Tier VI Rock",
         "subtitle": "Slate"
     },
     "T7_ROCK": {
-        "title": "Tier VII ",
+        "title": "Tier VII Rock",
         "subtitle": "Basalt"
     },
     "T8_ROCK": {
-        "title": "Tier VIII ",
+        "title": "Tier VIII Rock",
         "subtitle": "Marble"
     },
     "T2_STONEBLOCK": {
